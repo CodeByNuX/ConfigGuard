@@ -5,6 +5,7 @@ ConfigGuard simplifies the backup process for Cisco router and switch configurat
 ### Python packages:
 * pip3 install netmiko
 * pip3 install orionsdk
+
 ### Environment_variables:
 #### example: /etc/environment
 * swis_username="admin"
@@ -13,7 +14,10 @@ ConfigGuard simplifies the backup process for Cisco router and switch configurat
 * network_username='UberAccount'
 * network_password='Qwerty!0987'
 * network_enable=None
-
+### SolarWinds requirements:
+### Custom property
+ConfigGuard
+    - To enable configuration backups for Cisco nodes within SolarWinds, ensure that each node has the custom property 'ConfigGuard' assigned.
 
 #### Example usage:
 ##### Populate from SolarWinds:
