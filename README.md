@@ -41,6 +41,7 @@ hostname, ipAddress, network_username, network_password, network_enable
 
 ```
 #### CSV file without credentials
+headers
 ```
 hostname,ipAddress
 ```
