@@ -1,6 +1,17 @@
 # ConfigGuard
 ConfigGuard simplifies the backup process for Cisco router and switch configurations, abstracting the complexities of interfacing with SolarWinds SWIS and CSV files. Its intuitive, intent-based interface allows users to easily interact with the class and select their desired actions.
 
+Optionally, you can use the setup_basic_logging_to_file function to enable file-based logging for ConfigGuard, or you can implement a custom logging solution.
+
+##### TODO:
+Future releases will have:
+- setup_logging_to_file
+    - The ability to specify the logging file
+- backup_all_devices
+    - The ability to specify the backup folder
+- Threading
+    - Speedup the backup processes by introducing threads.
+
 ## Requirements:
 ### Python packages:
 * pip3 install netmiko
