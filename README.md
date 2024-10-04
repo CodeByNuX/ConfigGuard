@@ -25,10 +25,23 @@ Future releases will have:
 * network_username='UberAccount'
 * network_password='Qwerty!0987'
 * network_enable=None
+
 ### SolarWinds requirements:
-### Custom property
+#### Custom property
 - ConfigGuard
     - To enable configuration backups for Cisco nodes within SolarWinds, ensure that each node has the custom property 'ConfigGuard' assigned.
+
+### CSV requirements:
+#### CSV file with credentials
+headers
+```
+hostname, ipAddress, network_username, network_password, network_enable
+
+```
+#### CSV file without credentials
+```
+hostname,ipAddress
+```
 
 #### Example usage:
 ##### Populate from SolarWinds:
