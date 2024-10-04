@@ -27,7 +27,7 @@ Future releases will have:
 * network_enable=None
 ### SolarWinds requirements:
 ### Custom property
-ConfigGuard
+- ConfigGuard
     - To enable configuration backups for Cisco nodes within SolarWinds, ensure that each node has the custom property 'ConfigGuard' assigned.
 
 #### Example usage:
