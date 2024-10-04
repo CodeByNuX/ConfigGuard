@@ -5,7 +5,7 @@ import datetime
 from netmiko import ConnectHandler, NetmikoTimeoutException, NetmikoAuthenticationException
 from orionsdk import SwisClient
 
-class credentials:
+class _credentials:
     def __init__(self):
         self.network_username = None
         self.network_password = None
@@ -66,7 +66,7 @@ class network_nodes:
 
 
             response = swis_client.query(query)
-            creds = credentials()
+            creds = _credentials()
             creds.use_environment()  # Use environment credentials
             
             for result in response['results']:
@@ -91,7 +91,7 @@ class network_nodes:
                     hostname = row['hostname']
                     ip_address = row['ipAddress']
                     domain_name = 'unknown_domain'  # Can be retrieved later
-                    creds = credentials()
+                    creds = _credentials()
                     if use_environment_variable_for_credentials == False:
                         creds.network_username = row['network_username']
                         creds.network_password = row['network_password']
