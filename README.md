@@ -1,6 +1,8 @@
 # ConfigGuard
 ConfigGuard simplifies the backup process for Cisco router and switch configurations, abstracting the complexities of interfacing with SolarWinds SWIS and CSV files. Its intuitive, intent-based interface allows users to easily interact with the class and select their desired actions.
 
+Backups will be stored in folders named after the domain name of each device. These folders are created in the current working directory of the calling script.
+
 Optionally, you can use the setup_basic_logging_to_file function to enable file-based logging for ConfigGuard, or you can implement a custom logging solution.
 
 ##### TODO:
